@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Kichen from "../../components/Kichen/Kichen";
 import RecipeItem from "../../components/RecipeItem/RecipeItem";
+import toast, { Toaster } from "react-hot-toast";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([])
@@ -20,7 +21,7 @@ const Recipes = () => {
       setKichenItems(newItems)
     }
     else{
-      alert('Already Cooking')
+      toast.error('Already added');
     }
   }
   
@@ -38,8 +39,8 @@ const Recipes = () => {
         </div>
 
         {/* Recipe Body */}
-        <div className="flex gap-6">
-          <div className="grid grid-cols-2 gap-6">
+        <div className="inline-flex gap-6">
+          <div className="grid grid-cols-2 gap-6 lg:w-3/5">
             {
               recipes.map((recipe, index) => <RecipeItem 
                 key={index}
@@ -51,6 +52,7 @@ const Recipes = () => {
           <Kichen kichenItems={kichenItems} setKichenItems={setKichenItems}/>
         </div>
       </div>
+      <Toaster />
     </section>
   );
 };

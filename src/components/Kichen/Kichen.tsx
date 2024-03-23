@@ -1,13 +1,18 @@
 import { useState } from "react";
 
 const Kichen = ({kichenItems, setKichenItems}) => {
-
+  
   const [cookingList, setCookingList] = useState([])
 
-
+  const handleCooking = (recipe) => {
+    setCookingList([...cookingList, recipe])
+    // update kichen Items
+    const newKichenItems = kichenItems.filter(item => item !== recipe)
+    setKichenItems(newKichenItems)
+  }
   
   return (
-    <div className="border rounded-2xl p-6">
+    <div className="border rounded-2xl p-6 h-fit">
       {/* Want to Cook */}
       <div>
         <h1 className="text-2xl font-semibold text-neutral text-center border-b py-2 pb-4">
