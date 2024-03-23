@@ -10,12 +10,12 @@ const Navbar = () => {
             <div className="flex flex-col md:flex-row justify-between items-center py-8 md:w-11/12 max-w-screen-2xl mx-auto">
                 {/* Website Title */}
                 <div>
-                    <h1 className="text-secondary text-2xl md:text-3xl font-bold">Spicy Restora</h1>
+                    <a href="/" className="text-secondary text-2xl md:text-3xl font-bold">Spicy Restora</a>
                 </div>
 
                 {/* Nav menu */}
                 <ul className="flex items-center gap-10 xl:gap-12 text-secondary">
-                    <li><a className="hover:text-primary" href="#">Home</a></li>
+                    <li><a className="hover:text-primary" href="/">Home</a></li>
                     <li><a className="hover:text-primary" href="#">Recipes</a></li>
                     <li><a className="hover:text-primary" href="#">About</a></li>
                     <li><a className="hover:text-primary" href="#">Search</a></li>
