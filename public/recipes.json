@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Classic Cheeseburger",
+        "description": "Juicy beef patty with melted cheese in toasted sesame bun.",
+        "image": "https://iambaker.net/wp-content/uploads/2019/05/cheeseburger-1.jpg",
+        "ingredients": [
+          {"ingredient": "Ground beef", "measurement": "1/2 lb"},
+          {"ingredient": "Cheese slices", "measurement": "2 slices"},
+          {"ingredient": "Sesame seed bun", "measurement": "1"},
+          {"ingredient": "Lettuce leaves", "measurement": "2"},
+          {"ingredient": "Tomato slices", "measurement": "2"},
+          {"ingredient": "Onion slices", "measurement": "2"},
+          {"ingredient": "Ketchup", "measurement": "2 tbsp"}
+        ],
+        "cooking_time": "20 minutes",
+        "calories": "550 calories"
+      },
+      {
+        "name": "Spaghetti Carbonara",
+        "description": "Rich pasta dish with bacon, eggs, and Parmesan cheese.",
+        "image": "https://www.thecandidcooks.com/wp-content/uploads/2022/04/spaghetti-carbonara-feature.jpg",
+        "ingredients": [
+          {"ingredient": "Spaghetti", "measurement": "8 oz"},
+          {"ingredient": "Bacon", "measurement": "4 slices"},
+          {"ingredient": "Eggs", "measurement": "2"},
+          {"ingredient": "Parmesan cheese", "measurement": "1/2 cup"},
+          {"ingredient": "Garlic cloves", "measurement": "2"},
+          {"ingredient": "Black pepper", "measurement": "1/2 tsp"},
+          {"ingredient": "Parsley", "measurement": "2 tbsp"}
+        ],
+        "cooking_time": "25 minutes",
+        "calories": "620 calories"
+      },
+      {
+        "name": "Caesar Salad",
+        "description": "Crisp romaine lettuce with creamy Caesar dressing and croutons.",
+        "image": "https://img.taste.com.au/8-PjS8DG/w720-h480-cfill-q80/taste/2016/11/traditional-caesar-salad-974-1.jpeg",
+        "ingredients": [
+          {"ingredient": "Romaine lettuce", "measurement": "1 head"},
+          {"ingredient": "Caesar dressing", "measurement": "1/4 cup"},
+          {"ingredient": "Croutons", "measurement": "1/2 cup"},
+          {"ingredient": "Parmesan cheese", "measurement": "1/4 cup"},
+          {"ingredient": "Lemon juice", "measurement": "2 tbsp"},
+          {"ingredient": "Anchovy fillets", "measurement": "2"},
+          {"ingredient": "Black pepper", "measurement": "1/2 tsp"}
+        ],
+        "cooking_time": "15 minutes",
+        "calories": "350 calories"
+      },
+      {
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with tomato sauce, mozzarella, and fresh basil.",
+        "image": "https://img.taste.com.au/DhThzPm9/taste/2016/11/eat-pray-love-39581-3.jpeg",
+        "ingredients": [
+          {"ingredient": "Pizza dough", "measurement": "1 lb"},
+          {"ingredient": "Tomato sauce", "measurement": "1/2 cup"},
+          {"ingredient": "Mozzarella cheese", "measurement": "8 oz"},
+          {"ingredient": "Fresh basil leaves", "measurement": "1/4 cup"},
+          {"ingredient": "Olive oil", "measurement": "2 tbsp"},
+          {"ingredient": "Garlic cloves", "measurement": "2"},
+          {"ingredient": "Salt", "measurement": "1/2 tsp"}
+        ],
+        "cooking_time": "30 minutes",
+        "calories": "800 calories"
+      },
+      {
+        "name": "Chicken Noodle Soup",
+        "description": "Comforting soup with chicken, noodles, and vegetables in broth.",
+        "image": "https://www.inspiredtaste.net/wp-content/uploads/2018/09/Easy-Chicken-Noodle-Soup-Recipe-1200.jpg",
+        "ingredients": [
+          {"ingredient": "Chicken breast", "measurement": "1 lb"},
+          {"ingredient": "Noodles", "measurement": "4 oz"},
+          {"ingredient": "Carrots", "measurement": "2"},
+          {"ingredient": "Celery stalks", "measurement": "2"},
+          {"ingredient": "Onion", "measurement": "1"},
+          {"ingredient": "Chicken broth", "measurement": "6 cups"},
+          {"ingredient": "Bay leaves", "measurement": "2"}
+        ],
+        "cooking_time": "40 minutes",
+        "calories": "280 calories"
+      },
+      {
+        "name": "Chocolate Brownies",
+        "description": "Decadent chocolate brownies with rich fudgy texture.",
+        "image": "https://bakingwithgranny.co.uk/wp-content/uploads/2017/01/brownies2.jpg",
+        "ingredients": [
+          {"ingredient": "Dark chocolate", "measurement": "8 oz"},
+          {"ingredient": "Butter", "measurement": "1/2 cup"},
+          {"ingredient": "Sugar", "measurement": "1 cup"},
+          {"ingredient": "Eggs", "measurement": "2"},
+          {"ingredient": "All-purpose flour", "measurement": "1/2 cup"},
+          {"ingredient": "Vanilla extract", "measurement": "1 tsp"},
+          {"ingredient": "Salt", "measurement": "1/4 tsp"}
+        ],
+        "cooking_time": "35 minutes",
+        "calories": "400 calories"
+      }      
+]

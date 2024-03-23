@@ -1,7 +1,29 @@
+import { useEffect, useState } from "react";
 import Kichen from "../../components/Kichen/Kichen";
 import RecipeItem from "../../components/RecipeItem/RecipeItem";
 
 const Recipes = () => {
+  const [recipes, setRecipes] = useState([])
+  const [kichenItems, setKichenItems] = useState([])
+
+  useEffect(() => {
+    fetch('recipes.json')
+    .then(res => res.json())
+    .then(data => setRecipes(data))
+  }, [])  
+
+
+  // Add to kichen items
+  const addToKichenItems = (recipe) => {
+    if(!kichenItems.includes(recipe)){
+      const newItems = [...kichenItems, recipe]
+      setKichenItems(newItems)
+    }
+    else{
+      alert('Already Cooking')
+    }
+  }
+  
   return (
     <section className="py-24 px-4 md:px-6 lg:px-8">
       <div className="w-11/12 max-w-screen-2xl mx-auto space-y-12">
@@ -18,10 +40,15 @@ const Recipes = () => {
         {/* Recipe Body */}
         <div className="flex gap-6">
           <div className="grid grid-cols-2 gap-6">
-            <RecipeItem />
-            <RecipeItem />
+            {
+              recipes.map((recipe, index) => <RecipeItem 
+                key={index}
+                recipe={recipe}
+                addToKichenItems={addToKichenItems}
+              />)
+            }
           </div>
-          <Kichen />
+          <Kichen kichenItems={kichenItems} setKichenItems={setKichenItems}/>
         </div>
       </div>
     </section>
