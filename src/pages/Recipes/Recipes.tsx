@@ -3,8 +3,16 @@ import Kichen from "../../components/Kichen/Kichen";
 import RecipeItem from "../../components/RecipeItem/RecipeItem";
 import toast, { Toaster } from "react-hot-toast";
 
+interface Recipe {
+  // Define the structure of your recipe object
+  name: string;
+  description: string;
+  // Add other properties as needed
+}
+
+
 const Recipes = () => {
-  const [recipes, setRecipes] = useState([])
+  const [recipes, setRecipes] = useState<Recipe[]>([])
   const [kichenItems, setKichenItems] = useState([])
 
   useEffect(() => {
@@ -15,7 +23,7 @@ const Recipes = () => {
 
 
   // Add to kichen items
-  const addToKichenItems = (recipe) => {
+  const addToKichenItems = (recipe: Recipe) => {
     if(!kichenItems.includes(recipe)){
       const newItems = [...kichenItems, recipe]
       setKichenItems(newItems)
