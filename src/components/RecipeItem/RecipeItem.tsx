@@ -3,7 +3,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faFire } from "@fortawesome/free-solid-svg-icons";
 
-const RecipeItem = ({recipe, addToKichenItems}) => {
+interface RecipeItem {
+    name: string;
+    description: string;
+    image: string;
+    ingredients: [
+        { ingredient: string, measurement: string }
+    ];
+    cooking_time: string;
+    calories: string;
+}
+
+interface RecipeItemProps {
+    recipe: RecipeItem;
+    addToKichenItems: (recipe: RecipeItem) => void;
+}
+
+const RecipeItem = ({recipe, addToKichenItems}: RecipeItemProps) => {
     const {name, description, image, ingredients, cooking_time, calories} = recipe
     
     return (

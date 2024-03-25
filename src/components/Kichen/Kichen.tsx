@@ -1,10 +1,27 @@
 import { useState } from "react";
+interface KichenItem {
+  name: string;
+  description: string;
+  image: string;
+  ingredients: [
+    { ingredient: string, measurement: string }
+];
+  cooking_time: string;
+  calories: string;
+}
 
-const Kichen = ({kichenItems, setKichenItems}) => {
+interface KichenProps {
+  kichenItems: KichenItem[];
+  setKichenItems: React.Dispatch<React.SetStateAction<KichenItem[]>>;
+}
+
+
+
+const Kichen = ({kichenItems, setKichenItems}: KichenProps) => {
   
-  const [cookingList, setCookingList] = useState([])
+  const [cookingList, setCookingList] = useState<KichenItem[]>([])
 
-  const handleCooking = (recipe) => {
+  const handleCooking = (recipe: KichenItem) => {
     setCookingList([...cookingList, recipe])
     // update kichen Items
     const newKichenItems = kichenItems.filter(item => item !== recipe)
@@ -33,7 +50,7 @@ const Kichen = ({kichenItems, setKichenItems}) => {
             <tbody className="bg-base-200 bg-opacity-20 text-neutral text-opacity-70">
               {/* row 1 */}
               {
-                kichenItems.map((item: object, index: number) => <tr
+                kichenItems.map((item, index: number) => <tr
                   key={index}
                 >
                   <th>{index + 1}</th>

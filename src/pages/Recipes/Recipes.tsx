@@ -7,13 +7,29 @@ interface Recipe {
   // Define the structure of your recipe object
   name: string;
   description: string;
-  // Add other properties as needed
+  image: string;
+  ingredients: [
+    { ingredient: string, measurement: string }
+];
+  cooking_time: string;
+  calories: string;
+}
+
+interface KichenItem {
+  name: string;
+  description: string;
+  image: string;
+  ingredients: [
+    { ingredient: string, measurement: string }
+  ];
+  cooking_time: string;
+  calories: string;
 }
 
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState<Recipe[]>([])
-  const [kichenItems, setKichenItems] = useState([])
+  const [kichenItems, setKichenItems] = useState<KichenItem[]>([])
 
   useEffect(() => {
     fetch('recipes.json')
