@@ -99,6 +99,20 @@ const Kichen = ({kichenItems, setKichenItems}: KichenProps) => {
                 </tr>
                 )
               }
+              <tr className="font-bold text-neutral">
+                <th></th>
+                <td>Total = </td>
+                <td>
+                  {cookingList.reduce((prevValue, item) => {
+                  return prevValue += parseInt(item.cooking_time.split(' ')[0])
+                  }, 0)} minutes
+                </td>
+                <td>
+                  {cookingList.reduce((prevValue, item) => {
+                    return prevValue += parseInt(item.calories.split(' ')[0])
+                  }, 0)} <br /> calories
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
